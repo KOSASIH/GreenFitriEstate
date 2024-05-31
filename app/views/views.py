@@ -1,6 +1,8 @@
-from django.shortcuts import render, redirect
-from.forms import PiPaymentForm
+from django.shortcuts import redirect, render
 from pi_network.pi_payment import PiPayment
+
+from .forms import PiPaymentForm
+
 
 def pi_payment_view(request):
     if request.method == "POST":

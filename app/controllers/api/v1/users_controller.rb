@@ -42,7 +42,7 @@ module Api
       # DELETE /api/v1/users/:id
       def destroy
         @user.destroy
-        render json: { message: 'User deleted successfully' }, status: :ok
+        render json: { message: "User deleted successfully" }, status: :ok
       end
 
       private

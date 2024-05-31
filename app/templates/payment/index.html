@@ -1,0 +1,18 @@
+<form method="post">
+  {% csrf_token %}
+  <h2>Choose a payment method:</h2>
+  <ul>
+    {% for payment_method in payment_methods %}
+    <li>
+      <input
+        type="radio"
+        name="payment_method"
+        value="{{ payment_method.id }}"
+      />
+      {{ payment_method.name }} ({{ payment_method.description }})
+    </li>
+    {% endfor %}
+  </ul>
+  <p>Amount: <input type="number" name="amount" required /></p>
+  <button type="submit">Make Payment</button>
+</form>

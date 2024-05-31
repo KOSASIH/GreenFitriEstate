@@ -4,6 +4,6 @@
 //= require chart
 //= require datatable
 
-$(document).ready(function() {
+$(document).ready(function () {
   // Initialize JavaScript plugins and scripts here
 });

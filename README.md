@@ -1,9 +1,13 @@
+![Static Badge](https://img.shields.io/badge/Pi-Network-violet)
+[![CodeFactor](https://www.codefactor.io/repository/github/kosasih/greenfitriestate/badge/main)](https://www.codefactor.io/repository/github/kosasih/greenfitriestate/overview/main)
 ![Static Badge](https://img.shields.io/badge/Green_Fitri_Estate-green)
 [![CodeQL](https://github.com/KOSASIH/GreenFitriEstate/actions/workflows/codeql.yml/badge.svg)](https://github.com/KOSASIH/GreenFitriEstate/actions/workflows/codeql.yml)
 [![Greetings](https://github.com/KOSASIH/GreenFitriEstate/actions/workflows/greetings.yml/badge.svg)](https://github.com/KOSASIH/GreenFitriEstate/actions/workflows/greetings.yml)
 [![StackHawk](https://github.com/KOSASIH/GreenFitriEstate/actions/workflows/stackhawk.yml/badge.svg)](https://github.com/KOSASIH/GreenFitriEstate/actions/workflows/stackhawk.yml)
+[![DeepSource](https://app.deepsource.com/gh/KOSASIH/GreenFitriEstate.svg/?label=active+issues&show_trend=true&token=KpljF1E0KztQBg9krwbfbCtR)](https://app.deepsource.com/gh/KOSASIH/GreenFitriEstate/)
 
 # GreenFitriEstate
+
 The official repository for Green Fitri Estate, a revolutionary real estate application for Indonesia.
 
 # GreenFitriEstate
@@ -25,11 +29,13 @@ What things you need to install and how to install them
 # Installing
 
 1. Clone the repository:
+
 ```
 1. git clone https://github.com/KOSASIH/GreenFitriEstate.git
 ```
 
 2. Create a virtual environment and activate it:
+
 ```
 1. cd GreenFitriEstate
 2. virtualenv venv
@@ -37,14 +43,17 @@ What things you need to install and how to install them
 ```
 
 3. Install the required packages:
+
 ```
 1. pip install -r requirements.txt
 ```
 
 4. Run the application:
+
 ```
 1. flask run
 ```
+
 The application will be available at http://127.0.0.1:5000/.
 
 # Built With
@@ -60,4 +69,3 @@ Please read CONTRIBUTING.md for details on our code of conduct, and the process 
 # License
 
 This project is licensed under the MIT License - see the LICENSE.md file for details.
-
