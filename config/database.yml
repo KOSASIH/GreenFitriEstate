@@ -1,0 +1,63 @@
+# Database configuration file
+
+# Development environment
+development:
+  adapter: postgresql
+  encoding: unicode
+  host: localhost
+  port: 5432
+  database: green_fitri_estate_dev
+  username: green_fitri_estate
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+
+  # Connection pooling
+  pool: 5
+
+  # SQL logging
+  logger: debug
+
+# Test environment
+test:
+  adapter: postgresql
+  encoding: unicode
+  host: localhost
+  port: 5432
+  database: green_fitri_estate_test
+  username: green_fitri_estate
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+
+  # Connection pooling
+  pool: 5
+
+  # SQL logging
+  logger: debug
+
+# Production environment
+production:
+  adapter: postgresql
+  encoding: unicode
+  host: <%= ENV['DATABASE_HOST'] %>
+  port: <%= ENV['DATABASE_PORT'] %>
+  database: <%= ENV['DATABASE_NAME'] %>
+  username: <%= ENV['DATABASE_USERNAME'] %>
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+
+  # Connection pooling
+  pool: 10
+
+  # SQL logging
+  logger: info
+
+# Additional configuration options
+default:
+  # Enable SSL encryption
+  ssl: true
+
+  # Set the timezone
+  timezone: UTC
+
+  # Set the charset
+  charset: utf8mb4
+
+  # Set the collation
+  collation: utf8mb4_unicode_ci
