@@ -1,0 +1,13 @@
+public/images
+├── favicon.ico
+├── logo.png
+├── background.jpg
+├── icons
+│   ├── facebook.png
+│   ├── twitter.png
+│   ├── instagram.png
+│   └── ...
+├── avatars
+│   ├── default.png
+│   └── ...
+└── ...
