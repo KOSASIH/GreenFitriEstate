@@ -20,7 +20,7 @@ mysqlclient==2.1.1
 sqlite3==2.6.0
 
 # Security dependencies
-cryptography==37.0.4
+cryptography==42.0.4
 pyjwt==2.4.0
 
 # Utility dependencies
