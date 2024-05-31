@@ -2,6 +2,7 @@
 [![CodeQL](https://github.com/KOSASIH/GreenFitriEstate/actions/workflows/codeql.yml/badge.svg)](https://github.com/KOSASIH/GreenFitriEstate/actions/workflows/codeql.yml)
 [![Greetings](https://github.com/KOSASIH/GreenFitriEstate/actions/workflows/greetings.yml/badge.svg)](https://github.com/KOSASIH/GreenFitriEstate/actions/workflows/greetings.yml)
 [![StackHawk](https://github.com/KOSASIH/GreenFitriEstate/actions/workflows/stackhawk.yml/badge.svg)](https://github.com/KOSASIH/GreenFitriEstate/actions/workflows/stackhawk.yml)
+[![DeepSource](https://app.deepsource.com/gh/KOSASIH/GreenFitriEstate.svg/?label=active+issues&show_trend=true&token=KpljF1E0KztQBg9krwbfbCtR)](https://app.deepsource.com/gh/KOSASIH/GreenFitriEstate/)
 
 # GreenFitriEstate
 The official repository for Green Fitri Estate, a revolutionary real estate application for Indonesia.
