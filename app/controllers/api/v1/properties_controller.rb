@@ -42,7 +42,7 @@ module Api
       # DELETE /api/v1/properties/:id
       def destroy
         @property.destroy
-        render json: { message: 'Property deleted successfully' }, status: :ok
+        render json: { message: "Property deleted successfully" }, status: :ok
       end
 
       private

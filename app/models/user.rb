@@ -35,9 +35,9 @@ class User < ApplicationRecord
   # Serialization
   def serializable_hash(options = {})
     super(options).merge({
-      properties: properties.map(&:id),
-      favorites: favorites.map(&:id)
-    })
+                           properties: properties.map(&:id),
+                           favorites: favorites.map(&:id)
+                         })
   end
 
   private

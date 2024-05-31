@@ -37,8 +37,8 @@ class Property < ApplicationRecord
   # Serialization
   def serializable_hash(options = {})
     super(options).merge({
-      images: images.map(&:url),
-      features: features.map(&:name)
-    })
+                           images: images.map(&:url),
+                           features: features.map(&:name)
+                         })
   end
 end
