@@ -1,0 +1,30 @@
+<h1><%= @property.address %></h1>
+
+<div class="row">
+  <div class="col-md-6">
+    <div class="card mb-4">
+      <img src="<%= @property.images.first.url %>" alt="<%= @property.address %>" class="card-img-top">
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="card mb-4">
+      <div class="card-body">
+        <h5 class="card-title">Description</h5>
+        <p class="card-text"><%= @property.description %></p>
+        <h5 class="card-title">Features</h5>
+        <ul>
+          <% @property.features.each do |feature| %>
+            <li><%= feature.name %></li>
+          <% end %>
+        </ul>
+        <h5 class="card-title">Price</h5>
+        <p class="card-text"><%= number_to_currency(@property.price) %></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%= render 'properties/map', locals: { property: @property } %>
+
+<%= link_to "Edit", edit_property_path(@property), class: "btn btn-primary" %>
+<%= link_to "Back", properties_path, class: "btn btn-secondary" %>
