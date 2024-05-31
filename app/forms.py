@@ -1,5 +1,7 @@
 from django import forms
+
 from .models import PaymentMethod
+
 
 class PaymentForm(forms.Form):
     payment_method = forms.ModelChoiceField(queryset=PaymentMethod.objects.all())
