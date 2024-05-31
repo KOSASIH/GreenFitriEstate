@@ -1,3 +1,4 @@
+![Static Badge](https://img.shields.io/badge/Green_Fitri_Estate-green)
 [![CodeQL](https://github.com/KOSASIH/GreenFitriEstate/actions/workflows/codeql.yml/badge.svg)](https://github.com/KOSASIH/GreenFitriEstate/actions/workflows/codeql.yml)
 [![Greetings](https://github.com/KOSASIH/GreenFitriEstate/actions/workflows/greetings.yml/badge.svg)](https://github.com/KOSASIH/GreenFitriEstate/actions/workflows/greetings.yml)
 
