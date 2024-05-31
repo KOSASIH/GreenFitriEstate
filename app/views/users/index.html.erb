@@ -1,0 +1,23 @@
+<h1>Users</h1>
+
+<div class="row">
+  <% @users.each do |user| %>
+    <div class="col-md-4">
+      <div class="card mb-4">
+        <img src="<%= user.avatar.url %>" alt="<%= user.name %>" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title"><%= user.name %></h5>
+          <p class="card-text"><%= user.email %></p>
+          <p class="card-text">Joined: <%= user.created_at.strftime("%B %d, %Y") %></p>
+          <%= link_to "View", user_path(user), class: "btn btn-primary" %>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
+
+<%= paginate @users %>
+
+<%= render 'users/filter', locals: { users: @users } %>
+
+<%= render 'users/stats', locals: { users: @users } %>
