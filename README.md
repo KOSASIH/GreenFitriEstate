@@ -1,3 +1,5 @@
+[![CodeQL](https://github.com/KOSASIH/GreenFitriEstate/actions/workflows/codeql.yml/badge.svg)](https://github.com/KOSASIH/GreenFitriEstate/actions/workflows/codeql.yml)
+
 # GreenFitriEstate
 The official repository for Green Fitri Estate, a revolutionary real estate application for Indonesia.
 
