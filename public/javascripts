@@ -1,0 +1,11 @@
+public/javascripts
+├── application.js
+├── vendor
+│   ├── jquery.min.js
+│   ├── bootstrap.min.js
+│   └── ...
+├── plugins
+│   ├── chart.js
+│   ├── datatable.js
+│   └── ...
+└── ...
