@@ -1,3 +1,4 @@
+![Static Badge](https://img.shields.io/badge/Pi-Network-violet)
 [![CodeFactor](https://www.codefactor.io/repository/github/kosasih/greenfitriestate/badge/main)](https://www.codefactor.io/repository/github/kosasih/greenfitriestate/overview/main)
 ![Static Badge](https://img.shields.io/badge/Green_Fitri_Estate-green)
 [![CodeQL](https://github.com/KOSASIH/GreenFitriEstate/actions/workflows/codeql.yml/badge.svg)](https://github.com/KOSASIH/GreenFitriEstate/actions/workflows/codeql.yml)
