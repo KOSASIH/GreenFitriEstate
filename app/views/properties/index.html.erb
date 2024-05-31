@@ -1,0 +1,21 @@
+<h1>Properties</h1>
+
+<div class="row">
+  <% @properties.each do |property| %>
+    <div class="col-md-4">
+      <div class="card mb-4">
+        <img src="<%= property.images.first.url %>" alt="<%= property.address %>" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title"><%= property.address %></h5>
+          <p class="card-text"><%= truncate(property.description, length: 100) %></p>
+          <p class="card-text">Price: <%= number_to_currency(property.price) %></p>
+          <%= link_to "View", property_path(property), class: "btn btn-primary" %>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
+
+<%= paginate @properties %>
+
+<%= render 'properties/filter', locals: { properties: @properties } %>
