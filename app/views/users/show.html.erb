@@ -1,0 +1,27 @@
+<h1><%= @user.name %></h1>
+
+<div class="row">
+  <div class="col-md-6">
+    <div class="card mb-4">
+      <img src="<%= @user.avatar.url %>" alt="<%= @user.name %>" class="card-img-top">
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="card mb-4">
+      <div class="card-body">
+        <h5 class="card-title">Profile</h5>
+        <p class="card-text"><%= @user.bio %></p>
+        <h5 class="card-title">Contact</h5>
+        <ul>
+          <li>Email: <%= @user.email %></li>
+          <li>Phone: <%= @user.phone %></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%= render 'users/activity', locals: { user: @user } %>
+
+<%= link_to "Edit", edit_user_path(@user), class: "btn btn-primary" %>
+<%= link_to "Back", users_path, class: "btn btn-secondary" %>
