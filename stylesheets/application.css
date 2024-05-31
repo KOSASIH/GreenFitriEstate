@@ -1,0 +1,107 @@
+/* application.css */
+
+/* Import CSS frameworks and libraries */
+@import "bootstrap";
+@import "font-awesome";
+@import "animate";
+
+/* Define global variables and mixins */
+@variables {
+  --primary-color: #3498db;
+  --secondary-color: #f1c40f;
+  --font-family: "Open Sans", sans-serif;
+}
+
+@mixin clearfix() {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+/* Global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
+
+/* Layout styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.row {
+  @include clearfix();
+  margin: 0 -15px;
+}
+
+.col {
+  float: left;
+  padding: 15px;
+}
+
+/* Component styles */
+.button {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+ .container {
+    max-width: 768px;
+  }
+ .row {
+    margin: 0 -10px;
+  }
+ .col {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+ .container {
+    max-width: 480px;
+  }
+ .row {
+    margin: 0 -5px;
+  }
+ .col {
+    padding: 5px;
+  }
+}
