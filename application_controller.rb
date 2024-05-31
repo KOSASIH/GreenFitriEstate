@@ -18,7 +18,7 @@ module Api
 
       # Health check endpoint
       def health_check
-        render json: { status: 'ok' }, status: :ok
+        render json: { status: "ok" }, status: :ok
       end
 
       private

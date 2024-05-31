@@ -4,9 +4,9 @@ Green Fitri Estate is a real estate website built using Laravel.
 
 ## Features
 
-* Property management
-* User authentication and authorization
-* API endpoints for external clients
+- Property management
+- User authentication and authorization
+- API endpoints for external clients
 
 ## Installation
 

@@ -1,4 +1,5 @@
-from.pi_api import PiAPI
+from .pi_api import PiAPI
+
 
 class PiWallet:
     def __init__(self, username, password):
