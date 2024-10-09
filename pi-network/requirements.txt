@@ -2,7 +2,7 @@
 python==3.10.4
 
 # Django framework
-django==4.1.13
+django==4.2.16
 django-cors-headers==3.13.0
 django-filter==22.1
 django-rest-framework==3.13.3
